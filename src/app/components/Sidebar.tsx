@@ -4,7 +4,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar border-r-2 border-[#E3E3E3] px-2 py-4 h-[calc(100vh-70px)] overflow-y-scroll ">
+    <div className="sidebar border-r-2 border-[#E3E3E3] px-2 py-4 h-[calc(100vh-70px)] min-w-[50px] overflow-y-scroll ">
       <div className="flex flex-col items-center gap-3 mb-20">
         <div className=" rounded-xl p-3 hover:bg-[#F5F5F5] cursor-pointer  hover:shadow-sm">
           <Image
@@ -50,7 +50,7 @@ const Sidebar = () => {
           />
         </Link>
         <Link
-          href="/campaigns/messages"
+          href="/campaign/messages"
           className=" rounded-xl p-3 bg-[#F5F5F5] shadow-sm"
         >
           <Image
@@ -130,7 +130,7 @@ const Sidebar = () => {
         </Link>
         <Link
           href="/"
-          className="inline-block w-10 h-10 leading-10 rounded-full bg-[#009688] text-white font-semibold text-lg text-center hover:bg-[#36998f] "
+          className="inline-block w-10 h-10 leading-10 rounded-full bg-[#009688] text-white font-semibold text-lg text-center hover:bg-[#217f76] transition duration-100 "
         >
           F
         </Link>
