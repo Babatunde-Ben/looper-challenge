@@ -18,8 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
-        <div className="border-b-2 border-[#E3E3E3] bg-white fixed w-full h-[70px] flex items-center p-4">
+      <body className={`${nunito.className} `}>
+        <div className="border-b-2 border-[#E3E3E3] bg-white w-full h-[70px] flex items-center p-4">
           <Image
             src="/images/looper-logo.png"
             alt="looper-logo"
@@ -29,7 +29,7 @@ export default function RootLayout({
         </div>
         <div className="flex">
           <Sidebar />
-          {children}
+          <main className=" p-2">{children}</main>
         </div>
       </body>
     </html>
