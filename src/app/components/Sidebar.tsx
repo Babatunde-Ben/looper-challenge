@@ -18,12 +18,7 @@ const Sidebar = () => {
           href="/"
           className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
         >
-          <Image
-            src="/SVGs/home.svg"
-            alt="back-botton"
-            width={24}
-            height={24}
-          />
+          <Image src="/SVGs/home.svg" alt="home" width={24} height={24} />
         </Link>
 
         <Link
@@ -32,7 +27,7 @@ const Sidebar = () => {
         >
           <Image
             src="/SVGs/message-text.svg"
-            alt="back-botton"
+            alt="message-text"
             width={24}
             height={24}
           />
@@ -41,12 +36,7 @@ const Sidebar = () => {
           href="/"
           className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
         >
-          <Image
-            src="/SVGs/lock.svg"
-            alt="back-botton"
-            width={24}
-            height={24}
-          />
+          <Image src="/SVGs/lock.svg" alt="lock" width={24} height={24} />
         </Link>
         <Link
           href="/"
@@ -54,15 +44,18 @@ const Sidebar = () => {
         >
           <Image
             src="/SVGs/sms-notification.svg"
-            alt="back-botton"
+            alt="sms-notification"
             width={24}
             height={24}
           />
         </Link>
-        <Link href="/" className=" rounded-xl p-3 bg-[#F5F5F5] shadow-sm">
+        <Link
+          href="/campaigns/messages"
+          className=" rounded-xl p-3 bg-[#F5F5F5] shadow-sm"
+        >
           <Image
             src="/SVGs/volume-high.svg"
-            alt="back-botton"
+            alt="campaign"
             width={24}
             height={24}
           />
@@ -73,7 +66,7 @@ const Sidebar = () => {
         >
           <Image
             src="/SVGs/user-tag.svg"
-            alt="back-botton"
+            alt="user-pofile"
             width={24}
             height={24}
           />
@@ -82,34 +75,19 @@ const Sidebar = () => {
           href="/"
           className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
         >
-          <Image
-            src="/SVGs/messages-2.svg"
-            alt="back-botton"
-            width={24}
-            height={24}
-          />
+          <Image src="/SVGs/messages-2.svg" alt="chat" width={24} height={24} />
         </Link>
         <Link
           href="/"
           className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
         >
-          <Image
-            src="/SVGs/graph.svg"
-            alt="back-botton"
-            width={24}
-            height={24}
-          />
+          <Image src="/SVGs/graph.svg" alt="graph" width={24} height={24} />
         </Link>
         <Link
           href="/"
           className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
         >
-          <Image
-            src="/SVGs/shop.svg"
-            alt="back-botton"
-            width={24}
-            height={24}
-          />
+          <Image src="/SVGs/shop.svg" alt="shop" width={24} height={24} />
         </Link>
         <Link
           href="/"
@@ -117,7 +95,7 @@ const Sidebar = () => {
         >
           <Image
             src="/SVGs/setting-2.svg"
-            alt="back-botton"
+            alt="settings"
             width={24}
             height={24}
           />
