@@ -2,7 +2,7 @@ import React from "react";
 
 const Draft = () => {
   return (
-    <div className="bg-[#FAFAFA] rounded-lg w-full px-5 py-4 shadow-sm sm:w-1/2 md:w-80">
+    <div className="bg-[#FAFAFA] rounded-lg w-full px-5 py-4 shadow-sm sm:w-1/2 md:w-[315px] ">
       <p className="font-semibold text-xs mb-3 text-right">12, Jun 2022</p>
       <p className="text-xs text-[#C4C4C4] mb-2 uppercase font-bold">title</p>
       <p className="text-lg mb-9 font-extrabold">Title</p>
@@ -14,7 +14,7 @@ const Draft = () => {
       </p>
 
       <div className="flex gap-2 items-center mb-8">
-        <p className="bg-[#1E1E1E] h-4 w-4 rounded-full flex justify-center items-center relative">
+        <p className="bg-[#1E1E1E] h-[14px] w-[14px] rounded-full flex justify-center items-center relative">
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -35,10 +35,10 @@ const Draft = () => {
           </span>
         </p>
         {/* first progress */}
-        <div className="bg-[#E3E3E3] h-[3px] w-20 relative">
+        <div className="bg-[#E3E3E3] h-[3px] w-16 relative">
           <span className="bg-[#1E1E1E] inline-block w-[80%] h-full absolute top-0 left-0"></span>
         </div>
-        <p className="bg-[#C3C3C3] h-4 w-4 rounded-full flex justify-center items-center relative">
+        <p className="bg-[#C3C3C3] h-[14px] w-[14px] rounded-full flex justify-center items-center relative">
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,11 +60,11 @@ const Draft = () => {
         </p>
 
         {/* second progress */}
-        <div className="bg-[#E3E3E3] h-[3px] w-20 relative">
+        <div className="bg-[#E3E3E3] h-[3px] w-16 relative">
           <span className="bg-[#1E1E1E] inline-block w-[0%] h-full absolute top-0 left-0"></span>
         </div>
 
-        <p className="bg-[#C3C3C3] h-4 w-4 rounded-full flex justify-center items-center relative">
+        <p className="bg-[#C3C3C3] h-[14px] w-[14px] rounded-full flex justify-center items-center relative">
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -85,8 +85,10 @@ const Draft = () => {
           </span>
         </p>
       </div>
-      <span className="inline-block w-full h-[2px] bg-[#E3E3E3] my-3"></span>
-      <p className="font-extrabold text-sm text-right">Continue {">>"}</p>
+      <span className="inline-block w-full h-[1px] bg-[#E3E3E3] my-3"></span>
+      <p className="font-extrabold text-sm text-right cursor-pointer">
+        Continue {">>"}
+      </p>
     </div>
   );
 };

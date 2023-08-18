@@ -3,13 +3,14 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
+  const [isCampaignDropdownOpen, setIsCampaignDropdownOpen] = useState(true);
   return (
-    <div className="flex">
-      <div className=" border-r-2 border-[#E3E3E3] px-2 py-4 w-72">
+    <div className="flex h-[calc(100vh-70px)]">
+      <div className=" border-r-2 border-[#E3E3E3] px-2 py-4 w-56">
         <span className="inline-block rounded-xl p-3  hover:bg-[#F5F5F5]/50 cursor-pointer mb-3 hover:shadow-sm">
           <Image
             src="/SVGs/back-button.svg"
@@ -18,7 +19,20 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             height={20}
           />
         </span>
-        <div>
+        <p
+          onClick={() => setIsCampaignDropdownOpen(!isCampaignDropdownOpen)}
+          className="px-2 py-2 mb-3 font-bold flex gap-2 items-center cursor-pointer select-none"
+        >
+          <Image
+            src="/SVGs/arrow-down-stroke.svg"
+            alt="arrow-down"
+            width={30}
+            height={30}
+            className={isCampaignDropdownOpen ? "scale-[-1]" : "scale-100"}
+          />
+          <span>Campaigns</span>
+        </p>
+        <div className={isCampaignDropdownOpen ? "block" : "hidden"}>
           <Link
             href="messages"
             className={` rounded-lg px-4 py-2  flex items-center gap-2 mb-2 hover:bg-[#F5F5F5]/50 ${
@@ -32,7 +46,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               width={20}
               height={20}
             />
-            <span className="whitespace-nowrap font-semibold text-[#606060]">
+            <span className="whitespace-nowrap font-semibold text-[#606060] text-sm">
               Messages
             </span>
           </Link>
@@ -49,7 +63,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               width={20}
               height={20}
             />
-            <span className="whitespace-nowrap font-semibold text-[#606060]">
+            <span className="whitespace-nowrap font-semibold text-[#606060] text-sm">
               Manage campaigns
             </span>
           </Link>
@@ -66,7 +80,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               width={20}
               height={20}
             />
-            <span className="whitespace-nowrap font-semibold text-[#606060]">
+            <span className="whitespace-nowrap font-semibold text-[#606060] text-sm">
               Scheduled messages
             </span>
           </Link>
@@ -82,13 +96,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               width={20}
               height={20}
             />
-            <span className="whitespace-nowrap font-semibold text-[#606060]">
+            <span className="whitespace-nowrap font-semibold text-[#606060] text-sm">
               Drafts
             </span>
           </Link>
         </div>
       </div>
-      {children}`
+      <section className=" flex-1 h-[calc(100vh-70px)] overflow-y-scroll">
+        {children}
+      </section>
     </div>
   );
 };

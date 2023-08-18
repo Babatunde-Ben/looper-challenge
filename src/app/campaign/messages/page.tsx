@@ -1,15 +1,19 @@
+"use client";
 import Draft from "@/app/components/Draft";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Messages = () => {
+  const [searchTerm, setSearchTerm] = useState("");
   return (
-    <section className="px-3 py-8  w-full md:pl-4 md:pr-16">
+    <section className="px-3 py-8  w-full md:pl-4 md:pr-10">
       <div className="flex flex-wrap justify-between items-center gap-x-3 gap-y-5 mb-8">
-        <div className="bg-[#FAFAFA] px-3 py-2 flex items-center w-80 h-10 gap-3">
+        <div className="bg-[#FAFAFA] px-4 py-3 flex items-center w-80 h-10 gap-3 rounded-md">
           <Image src="/SVGs/search.svg" alt="search" width={20} height={20} />
           <input
             type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="Search for drafts"
             className="w-full outline-none border-none bg-transparent"
           />
@@ -36,6 +40,7 @@ const Messages = () => {
 
       <h2 className="text-xl font-extrabold mb-7">Drafts</h2>
       <div className="flex flex-wrap items-center gap-5">
+        <Draft />
         <Draft />
         <Draft />
         <Draft />

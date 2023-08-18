@@ -2,7 +2,7 @@ import React from "react";
 
 const ManageCampaigns = () => {
   return (
-    <section className=" px-3 py-8  w-full md:pl-4 md:pr-16">
+    <section className=" px-3 py-8  w-full md:pl-4 md:pr-10">
       <h1 className="text-lg font-bold  mb-5">Manage Campaigns Section</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque

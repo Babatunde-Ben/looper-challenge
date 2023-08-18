@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar border-r-2 border-[#E3E3E3] px-2 py-4 h-[calc(100vh-70px)] min-w-[50px] overflow-y-scroll ">
       <div className="flex flex-col items-center gap-3 mb-20">
-        <div className=" rounded-xl p-3 hover:bg-[#F5F5F5] cursor-pointer  hover:shadow-sm">
+        <div className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 cursor-pointer  hover:shadow-sm">
           <Image
             src="/SVGs/back-button.svg"
             alt="back-botton"
@@ -16,14 +16,14 @@ const Sidebar = () => {
         </div>
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image src="/SVGs/home.svg" alt="home" width={24} height={24} />
         </Link>
 
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image
             src="/SVGs/message-text.svg"
@@ -34,13 +34,13 @@ const Sidebar = () => {
         </Link>
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image src="/SVGs/lock.svg" alt="lock" width={24} height={24} />
         </Link>
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image
             src="/SVGs/sms-notification.svg"
@@ -62,7 +62,7 @@ const Sidebar = () => {
         </Link>
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image
             src="/SVGs/user-tag.svg"
@@ -73,25 +73,25 @@ const Sidebar = () => {
         </Link>
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image src="/SVGs/messages-2.svg" alt="chat" width={24} height={24} />
         </Link>
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image src="/SVGs/graph.svg" alt="graph" width={24} height={24} />
         </Link>
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image src="/SVGs/shop.svg" alt="shop" width={24} height={24} />
         </Link>
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image
             src="/SVGs/setting-2.svg"
@@ -105,7 +105,7 @@ const Sidebar = () => {
       <div className="flex flex-col items-center gap-3">
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image
             src="/SVGs/logout.svg"
@@ -116,7 +116,7 @@ const Sidebar = () => {
         </Link>
         <Link
           href="/"
-          className=" rounded-xl p-3 relative hover:bg-[#F5F5F5] hover:shadow-sm"
+          className=" rounded-xl p-3 relative hover:bg-[#F5F5F5]/80 hover:shadow-sm"
         >
           <Image
             src="/SVGs/notification.svg"
