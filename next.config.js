@@ -7,11 +7,6 @@ const nextConfig = {
         destination: "/campaign/messages",
         permanent: true,
       },
-      {
-        source: "/",
-        destination: "/campaign/messages",
-        permanent: true,
-      },
     ];
   },
 };

@@ -1,8 +1,13 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Sidebar = () => {
+  const pathname = usePathname();
+
   return (
     <div className="sidebar border-r-2 border-[#E3E3E3] px-2 py-4 h-[calc(100vh-70px)] min-w-[50px] overflow-y-scroll ">
       <div className="flex flex-col items-center gap-3 mb-20">
@@ -16,11 +21,12 @@ const Sidebar = () => {
         </div>
         <Link
           href="/"
-          className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
+          className={` rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm ${
+            pathname === "/" && "bg-[#F5F5F5] shadow-sm"
+          }`}
         >
           <Image src="/SVGs/home.svg" alt="home" width={24} height={24} />
         </Link>
-
         <Link
           href="/"
           className=" rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm"
@@ -51,7 +57,9 @@ const Sidebar = () => {
         </Link>
         <Link
           href="/campaign/messages"
-          className=" rounded-xl p-3 bg-[#F5F5F5] shadow-sm"
+          className={` rounded-xl p-3 hover:bg-[#F5F5F5]/80 hover:shadow-sm ${
+            pathname === "/campaign/messages" && "bg-[#F5F5F5] shadow-sm"
+          }`}
         >
           <Image
             src="/SVGs/volume-high.svg"
