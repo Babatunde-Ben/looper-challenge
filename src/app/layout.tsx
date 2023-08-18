@@ -8,7 +8,7 @@ import Link from "next/link";
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Looper",
+  title: "Lopper",
   description: "A dashboard coding assessment ",
 };
 
