@@ -28,6 +28,7 @@ export default function RootLayout({
               alt="looper-logo"
               width={40}
               height={40}
+              priority
             />
           </Link>
         </div>
